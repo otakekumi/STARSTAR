@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if tags %}
+    1
+        <ul class="pass-title">
+            {% for tag in tags %}
+                <li><a href="{{url_for("tags",tag=tag)}}">{{tag}}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {% if pages %}
+        <ul class="pass-title">
+            {% for page in pages %}
+                <li><a href="{{url_for('archive',postid=page.id)}}">{{ page.title}}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="login_title">Login In</h1>
+    <center>
+        <p>{{ error }}</p>
+        <form class="loginForm" action="{{ url_for('auth') }}" method="POST">
+            {{form.csrf_token}}
+            Username: <span class="loginUsername">    {{ form.name }}          </span><br>
+            Password: <span class="loginPassword">    {{ form.password }}      </span><br>
+            Remeber me:<span class="loginRemeberMe">  {{ form.remember_me }}   </span><br>
+            <input class="loginButton" type="submit" value="Login In">
+        </form>
+    </center>
+    <script>
+
+
+    </script>
+{% endblock %}

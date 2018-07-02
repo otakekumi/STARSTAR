@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+        {% if digests %}
+            <ul class="pass-title">
+                {% for digest in digests %}
+                    <li ><a href="{{url_for("digest",id=digest.digestId)}}">{{digest.title}}</a></li>
+                {% endfor %}
+            </ul>
+        {% elif digest%}
+            {% for i in digest %}
+                <a id="title">{{ i.title }}</a>
+                <a id="date">Posted at : {{ i.time }}</a>
+                <a id="content">{{ i.content }}</a>
+            {% endfor %}
+
+        {% endif %}
+
+{% endblock %}

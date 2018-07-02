@@ -1,0 +1,145 @@
+@font-face{
+    font-family: "BreeSerif-Regular";
+    src: url("../BreeSerif-Regular.ttf");
+
+}
+a{
+    text-decoration: none;
+
+    font-family: "BreeSerif-Regular";
+}
+div{
+    font-family: "BreeSerif-Regular";
+}
+
+.left{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 15%;
+    background-color: #F2FDFD;
+    box-shadow: 1px 1px 2px #D2E3E3;
+
+}
+
+.navigation{ 
+    position: relative;
+    top: 40%;
+    left:20%;
+    font-color:black;
+    list-style: none;
+    font-size: 18px;
+    line-height:40px;
+
+}
+
+.ava{
+    position: absolute;
+    border-radius: 50%;
+    top: 15%;
+    left: 15%;
+    height: 18%;
+
+}
+.pass-title{
+    position: absolute;
+    left:35%;
+    top:10%;
+    font-size:30px;
+
+    margin: 20px; 
+    line-height: 60px;
+}
+
+.pass-title a{
+        color:#4caf50;
+}
+
+#title{
+    position: absolute;
+    font-size: 64px;
+
+    top:12%;
+    left:30%;
+}
+#author{
+    position: absolute;
+    font-size: 16px;
+    top:23%;
+    font-color:grey;
+    left:30%;
+}
+#date{
+    position: absolute;
+    font-size: 16px;
+    top:25%;
+    font-color:grey;
+    left:30%;
+}
+#content{
+    position: absolute;
+    top:30%;
+    font-size:20px;
+    left:30%;
+    width:50%;
+}
+.about_me{
+    position: absolute;
+    left:30%;
+    top:20%;
+    font-size: 26px;
+}
+.bottom{
+    position: absolute;
+    font-size:16px;
+    top:90%;
+    left:10%;
+}
+.bottom a {
+    color:rgb(100, 94, 94);
+}
+
+.login_title{
+    position: absolute;
+    top: 10%;
+    left: 48%;
+}
+.loginForm{
+    font-size: 26px;
+    line-height: 30px;
+    background-color: darkslategrey;
+    width:30%;
+    height:20%;
+    text-align: center;
+}
+
+.loginUsername{
+    line-height: 18px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.loginButton{
+    width:250px;
+}
+
+/*.comment{*/
+    /*position:absolute;*/
+    /*height:100px;*/
+    /*left:30%;*/
+    /*width:40%;*/
+    /*background: grey;*/
+    /*margin: 30px;*/
+    /*padding: 30px;*/
+
+/*}*/
+
+/*#CommentSubmit{*/
+    /*position: absolute;*/
+    /*height: 40%;*/
+    /*width: 60%;*/
+    /*letf:20%;*/
+    /*background: grey;*/
+
+/*}*/

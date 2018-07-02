@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<span >
+        {% if page %}
+                <a id="title">{{page.title}}</a>
+                <a id="date">Posted at : {{page.time}}</a>
+
+                <div id="content">{{ page.content|safe }}</div>
+
+        {% endif %}
+</span>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'admin/base.html' %}
+{% block content %}
+    <span class="content">
+        {% if pages %}
+            <a href="{{ url_for('admin.editpassage') }}">新建</a>
+        <ul class="pass-title">
+            {% for page in pages %}
+                <li>
+                    <a href= "{{ url_for("archive",postid=page.id) }}">{{page.title}}</a>
+                    <a href= "{{ url_for("admin.editpassage",postid=page.id) }}">修改</a>
+                    <a href= "{{ url_for("admin.deletepassage",postid=page.id) }}">删除</a>
+                </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </span>
+{% endblock %}

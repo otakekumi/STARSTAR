@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <span class="content">
+        {% if pages %}
+        <ul class="pass-title">
+            {% for page in pages %}
+            <li ><a href= "{{url_for("archive",postid=page.id)}}">{{page.title}}</a></li>
+{#                <li ><a>{{page.title}}</a></li>#}
+            {% endfor %}
+        </ul>
+        {% elif page %}
+                <a id="title">{{page.title}}</a>
+                <a id="date">Posted at : {{page.time}}</a>
+        {% endif %}
+    </span>
+{% endblock %}
